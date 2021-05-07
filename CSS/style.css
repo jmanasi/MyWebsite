@@ -1,0 +1,28 @@
+/*features grid*/
+.features-grid-container{
+width: 80%;
+margin-left: auto;margin-right:auto;  /*align the container in the centre*/
+padding-bottom: 6rem;
+}
+/*reverse the position of image and text in second row*/
+.features-grid-container#second-row{flex-direction:row-reverse;}
+
+.first-row.features-grid-row-text{text-align:left;}
+.second-row.features-grid-row-text{text-align:right;}
+
+.features-grid-container .floating-image.right
+{
+	float:right;
+	
+}
+
+@media screen and (max-width:768px){
+	.features-grid-row .w-50{
+		width:80%;
+		margin-left:auto;margin-right:auto; /*align in the center*/
+		
+	}
+	.features-grid-row.d-flex-r{flex-direction:column;}
+	.features-grid-row#second-row{flex-direction:column;}
+	
+}
